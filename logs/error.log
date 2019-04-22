@@ -1,0 +1,545 @@
+2019/04/19 12:22:29 [error] 8814#8814: *3 open() "/media/gromor/Media/OS/PHP/upmind/public/index.php" failed (2: No such file or directory), client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET / HTTP/1.1", host: "upmind.umbra-scorpionem.com"
+2019/04/19 12:22:29 [error] 8814#8814: *3 open() "/media/gromor/Media/OS/PHP/upmind/public/index.php" failed (2: No such file or directory), client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 19:43:06 [error] 9633#9633: *8 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/data/totp.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 5
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/data/totp.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 5
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/19 20:21:08 [error] 9633#9633: *34 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/media/gromor/Media/OS/PHP/upmind/data/vendor/autoload.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 10
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:4
+PHP message: PHP Warning:  include(): Failed opening '/media/gromor/Media/OS/PHP/upmind/data/vendor/autoload.php' for inclusion (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 10
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:4
+PHP message: PHP Fatal error:  Uncaught Error: Class 'lfkeitel\phptotp\Base32' not found in /media/gromor/Media/OS/PHP/upmind/data/totp.php:19
+Stack trace:
+#0 /media/gromor/Media/OS/PHP/upmind/public/index.php(7): generateTotp()
+#1 {main}
+  thrown in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 19" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/19 20:21:08 [error] 9633#9633: *34 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/media/gromor/Media/OS/PHP/upmind/data/vendor/autoload.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 10
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:4
+PHP message: PHP Warning:  include(): Failed opening '/media/gromor/Media/OS/PHP/upmind/data/vendor/autoload.php' for inclusion (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 10
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:4
+PHP message: PHP Fatal error:  Uncaught Error: Class 'lfkeitel\phptotp\Base32' not found in /media/gromor/Media/OS/PHP/upmind/data/totp.php:19
+Stack trace:
+#0 /media/gromor/Media/OS/PHP/upmind/public/index.php(7): generateTotp()
+#1 {main}
+  thrown in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 19" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 20:21:30 [error] 9633#9633: *34 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/media/gromor/Media/OS/PHP/upmind/data/vendor/autoload.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 9
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:4
+PHP message: PHP Warning:  include(): Failed opening '/media/gromor/Media/OS/PHP/upmind/data/vendor/autoload.php' for inclusion (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 9
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:4
+PHP message: PHP Fatal error:  Uncaught Error: Class 'lfkeitel\phptotp\Base32' not found in /media/gromor/Media/OS/PHP/upmind/data/totp.php:18
+Stack trace:
+#0 /media/gromor/Media/OS/PHP/upmind/public/index.php(7): generateTotp()
+#1 {main}
+  thrown in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/19 20:22:40 [error] 9633#9633: *34 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/media/gromor/Media/OS/PHP/upmind/data/vendor/autoload.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 9
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:4
+PHP message: PHP Warning:  include(): Failed opening '/media/gromor/Media/OS/PHP/upmind/data/vendor/autoload.php' for inclusion (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 9
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:4
+PHP message: PHP Fatal error:  Uncaught Error: Class 'lfkeitel\phptotp\Base32' not found in /media/gromor/Media/OS/PHP/upmind/data/totp.php:18
+Stack trace:
+#0 /media/gromor/Media/OS/PHP/upmind/public/index.php(7): generateTotp()
+#1 {main}
+  thrown in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/19 20:24:11 [error] 9633#9633: *42 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/media/gromor/Media/OS/PHP/upmind/data/vendor/autoload.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 9
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:5
+PHP message: PHP Warning:  include(): Failed opening '/media/gromor/Media/OS/PHP/upmind/data/vendor/autoload.php' for inclusion (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 9
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:5" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/19 20:24:11 [error] 9633#9633: *42 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/media/gromor/Media/OS/PHP/upmind/data/vendor/autoload.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 9
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:5
+PHP message: PHP Warning:  include(): Failed opening '/media/gromor/Media/OS/PHP/upmind/data/vendor/autoload.php' for inclusion (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 9
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:5" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 20:24:27 [error] 9633#9633: *42 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/media/gromor/Media/OS/PHP/upmind/data/vendor/autoload.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 9
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:5
+PHP message: PHP Warning:  include(): Failed opening '/media/gromor/Media/OS/PHP/upmind/data/vendor/autoload.php' for inclusion (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 9
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:5" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/19 20:24:27 [error] 9633#9633: *42 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/media/gromor/Media/OS/PHP/upmind/data/vendor/autoload.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 9
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:5
+PHP message: PHP Warning:  include(): Failed opening '/media/gromor/Media/OS/PHP/upmind/data/vendor/autoload.php' for inclusion (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/data/totp.php on line 9
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:5" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 22:47:54 [error] 9633#9633: *101 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/19 22:49:25 [error] 9633#9633: *105 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/gr/print.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/gr/print.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /gr/print HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 22:49:25 [error] 9633#9633: *105 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 22:49:44 [error] 9633#9633: *105 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/gr/print.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/gr/print.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /gr/print HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 22:49:44 [error] 9633#9633: *105 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 22:54:14 [error] 9633#9633: *113 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function ubstr() in /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/19 22:54:30 [error] 9633#9633: *113 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function ubstr() in /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/19 22:54:44 [error] 9633#9633: *118 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(gr/print.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'gr/print.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /gr/print HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 22:54:44 [error] 9633#9633: *118 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 22:55:01 [error] 9633#9633: *121 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(gr/print.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'gr/print.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /gr/print HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 22:55:01 [error] 9633#9633: *121 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 22:55:48 [error] 9633#9633: *121 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 22:58:30 [error] 9633#9633: *129 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 22:58:32 [error] 9633#9633: *130 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 22:58:33 [error] 9633#9633: *130 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 22:58:44 [error] 9633#9633: *130 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 23:00:27 [error] 9633#9633: *144 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 23:00:42 [error] 9633#9633: *144 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/19 23:56:58 [error] 9633#9633: *158 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 00:13:00 [error] 9633#9633: *163 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 13:17:11 [error] 8305#8305: *1 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /media/gromor/Media/OS/PHP/upmind/data/qr.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /qr/print HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 13:17:11 [error] 8305#8305: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 13:48:05 [error] 8305#8305: *7 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 13:48:42 [error] 8305#8305: *7 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 13:49:14 [error] 8305#8305: *7 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:47:24 [error] 8305#8305: *23 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: qrCode in /media/gromor/Media/OS/PHP/upmind/public/index.html on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:31" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/20 14:47:24 [error] 8305#8305: *23 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:47:42 [error] 8305#8305: *23 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: qrCode in /media/gromor/Media/OS/PHP/upmind/public/index.html on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:31" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "POST / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:47:42 [error] 8305#8305: *23 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:48:18 [error] 8305#8305: *23 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: qrCode in /media/gromor/Media/OS/PHP/upmind/public/index.html on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:31" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "POST / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:48:18 [error] 8305#8305: *23 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:48:37 [error] 8305#8305: *23 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: qrCode in /media/gromor/Media/OS/PHP/upmind/public/index.html on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:31" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "POST / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:48:37 [error] 8305#8305: *31 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:49:33 [error] 8305#8305: *31 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: label in /media/gromor/Media/OS/PHP/upmind/public/qr/print.php on line 5
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:29
+PHP message: PHP Notice:  Undefined index: username in /media/gromor/Media/OS/PHP/upmind/public/qr/print.php on line 5
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:29
+PHP message: PHP Fatal error:  Uncaught TypeError: Argument 1 passed to printQR() must be of the type string, null given, called in /media/gromor/Media/OS/PHP/upmind/public/qr/print.php on line 5 and defined in /media/gromor/Media/OS/PHP/upmind/data/qr.php:5
+Stack trace:
+#0 /media/gromor/Media/OS/PHP/upmind/public/qr/print.php(5): printQR(NULL, 'mzxxk3temf2gs33...', NULL)
+#1 /media/gromor/Media/OS/PHP/upmind/public/index.php(29): require_once('/media/gromor/M...')
+#2 {main}
+  thrown in /media/gromor/Media/OS/PHP/upmind/data/qr.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /qr/print HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:49:33 [error] 8305#8305: *31 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:55:10 [error] 8305#8305: *39 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: label in /media/gromor/Media/OS/PHP/upmind/public/qr/print.php on line 5
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:36
+PHP message: PHP Fatal error:  Uncaught TypeError: Argument 1 passed to printQR() must be of the type string, null given, called in /media/gromor/Media/OS/PHP/upmind/public/qr/print.php on line 5 and defined in /media/gromor/Media/OS/PHP/upmind/data/qr.php:5
+Stack trace:
+#0 /media/gromor/Media/OS/PHP/upmind/public/qr/print.php(5): printQR(NULL, 'mzxxk3temf2gs33...', 'Username')
+#1 /media/gromor/Media/OS/PHP/upmind/public/index.php(36): require_once('/media/gromor/M...')
+#2 {main}
+  thrown in /media/gromor/Media/OS/PHP/upmind/data/qr.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /qr/print HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:55:10 [error] 8305#8305: *39 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 36
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 36
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:55:24 [error] 8305#8305: *39 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: label in /media/gromor/Media/OS/PHP/upmind/public/qr/print.php on line 5
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:36
+PHP message: PHP Fatal error:  Uncaught TypeError: Argument 1 passed to printQR() must be of the type string, null given, called in /media/gromor/Media/OS/PHP/upmind/public/qr/print.php on line 5 and defined in /media/gromor/Media/OS/PHP/upmind/data/qr.php:5
+Stack trace:
+#0 /media/gromor/Media/OS/PHP/upmind/public/qr/print.php(5): printQR(NULL, 'mzxxk3temf2gs33...', 'Username')
+#1 /media/gromor/Media/OS/PHP/upmind/public/index.php(36): require_once('/media/gromor/M...')
+#2 {main}
+  thrown in /media/gromor/Media/OS/PHP/upmind/data/qr.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /qr/print HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:55:24 [error] 8305#8305: *39 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 36
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 36
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:56:28 [error] 8305#8305: *39 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: label in /media/gromor/Media/OS/PHP/upmind/public/qr/print.php on line 5
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:36
+PHP message: PHP Fatal error:  Uncaught TypeError: Argument 1 passed to printQR() must be of the type string, null given, called in /media/gromor/Media/OS/PHP/upmind/public/qr/print.php on line 5 and defined in /media/gromor/Media/OS/PHP/upmind/data/qr.php:5
+Stack trace:
+#0 /media/gromor/Media/OS/PHP/upmind/public/qr/print.php(5): printQR(NULL, 'mzxxk3temf2gs33...', 'Username')
+#1 /media/gromor/Media/OS/PHP/upmind/public/index.php(36): require_once('/media/gromor/M...')
+#2 {main}
+  thrown in /media/gromor/Media/OS/PHP/upmind/data/qr.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /qr/print HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:56:28 [error] 8305#8305: *39 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 36
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 36
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:57:50 [error] 8305#8305: *50 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: label in /media/gromor/Media/OS/PHP/upmind/public/qr/print.php on line 5
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:38
+PHP message: PHP Fatal error:  Uncaught TypeError: Argument 1 passed to printQR() must be of the type string, null given, called in /media/gromor/Media/OS/PHP/upmind/public/qr/print.php on line 5 and defined in /media/gromor/Media/OS/PHP/upmind/data/qr.php:5
+Stack trace:
+#0 /media/gromor/Media/OS/PHP/upmind/public/qr/print.php(5): printQR(NULL, 'mzxxk3temf2gs33...', 'Username')
+#1 /media/gromor/Media/OS/PHP/upmind/public/index.php(38): require_once('/media/gromor/M...')
+#2 {main}
+  thrown in /media/gromor/Media/OS/PHP/upmind/data/qr.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /qr/print HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:57:50 [error] 8305#8305: *50 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:58:17 [error] 8305#8305: *50 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: qrCode in /media/gromor/Media/OS/PHP/upmind/public/index.html on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:40" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "POST / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:58:17 [error] 8305#8305: *50 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:58:37 [error] 8305#8305: *50 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: qrCode in /media/gromor/Media/OS/PHP/upmind/public/index.html on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:40" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /qr/print HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 14:58:37 [error] 8305#8305: *50 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 15:00:14 [error] 8305#8305: *60 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: qrCode in /media/gromor/Media/OS/PHP/upmind/public/index.html on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:40" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /qr/print HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 15:00:14 [error] 8305#8305: *60 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 15:01:33 [error] 8305#8305: *65 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 37
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 37
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 15:02:13 [error] 8305#8305: *66 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 36
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 36
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 15:17:42 [error] 8305#8305: *76 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(favicon.ico.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 36
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'favicon.ico.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 36
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 15:28:39 [error] 8305#8305: *91 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: label in /media/gromor/Media/OS/PHP/upmind/public/qr/print.php on line 7
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:34
+PHP message: PHP Notice:  Undefined variable: issuer in /media/gromor/Media/OS/PHP/upmind/public/qr/print.php on line 8
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:34" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /qr/print HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 15:29:50 [error] 8305#8305: *91 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: _SESION in /media/gromor/Media/OS/PHP/upmind/public/qr/print.php on line 7
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:34" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /qr/print HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/20 15:31:02 [error] 8305#8305: *91 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: _SESION in /media/gromor/Media/OS/PHP/upmind/public/qr/print.php on line 7
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:34" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /qr/print HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/"
+2019/04/22 00:13:03 [error] 10967#10967: *28 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(check.serve-page.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 10
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'check.serve-page.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 10
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /check.serve-page HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/22 00:13:20 [error] 10967#10967: *28 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(check.serve-page.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 10
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'check.serve-page.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 10
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /check.serve-page HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/22 00:13:31 [error] 10967#10967: *28 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: check in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 22
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5
+PHP message: PHP Notice:  Undefined index: check in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 23
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5
+PHP message: PHP Notice:  Undefined index: qr in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5
+PHP message: PHP Notice:  Undefined index: qr in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 30
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /check/serve-page HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/22 00:14:42 [error] 10967#10967: *28 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: check in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 22
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5
+PHP message: PHP Notice:  Undefined index: check in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 23
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5
+PHP message: PHP Notice:  Undefined index: qr in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5
+PHP message: PHP Notice:  Undefined index: qr in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 30
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /check/serve-page HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/22 00:15:19 [error] 10967#10967: *28 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: code in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 22
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5
+PHP message: PHP Notice:  Undefined index: qr in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5
+PHP message: PHP Notice:  Undefined index: qr in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 30
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /check/serve-page HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/22 00:15:37 [error] 10967#10967: *28 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: qr in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5
+PHP message: PHP Notice:  Undefined index: qr in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 30
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /check/serve-page HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/22 10:52:24 [error] 4251#4251: *4 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: qr in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5
+PHP message: PHP Notice:  Undefined index: qr in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 30
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /check/serve-page HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/22 15:33:46 [error] 4251#4251: *20 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: qr in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5
+PHP message: PHP Notice:  Undefined index: qr in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 30
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:10
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /check/serve-page HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com"
+2019/04/22 15:34:37 [error] 4251#4251: *21 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(check/serve-page?code=699+284&amp;user=The+TOTP.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 10
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'check/serve-page?code=699+284&amp;user=The+TOTP.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 10
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /check/serve-page?code=699+284&user=The+TOTP HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/check/serve-page"
+2019/04/22 15:35:26 [error] 4251#4251: *21 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(check/serve-page?code=699+284&amp;user=The+TOTP.php): failed to open stream: No such file or directory in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 10
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'check/serve-page?code=699+284&amp;user=The+TOTP.php' (include_path='.:/usr/share/php') in /media/gromor/Media/OS/PHP/upmind/public/index.php on line 10
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /check/serve-page?code=699+284&user=The+TOTP HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/check/serve-page"
+2019/04/22 15:37:35 [error] 4251#4251: *26 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: qr in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 29
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:11
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5
+PHP message: PHP Notice:  Undefined index: qr in /media/gromor/Media/OS/PHP/upmind/public/check/page.html on line 30
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:11
+PHP message: PHP   3. require_once() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:5" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /check/serve-page?code=699+284&user=The+TOTP HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/check/serve-page"
+2019/04/22 15:41:16 [error] 4251#4251: *45 FastCGI sent in stderr: "PHP message: PHP Notice:  A non well formed numeric value encountered in /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php on line 23
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /media/gromor/Media/OS/PHP/upmind/public/index.php:0
+PHP message: PHP   2. require_once() /media/gromor/Media/OS/PHP/upmind/public/index.php:11
+PHP message: PHP   3. loadPage() /media/gromor/Media/OS/PHP/upmind/public/check/serve-page.php:3" while reading response header from upstream, client: 127.0.0.1, server: upmind.umbra-scorpionem.com, request: "GET /check/serve-page?code=035++683&user=The+TOTP HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "upmind.umbra-scorpionem.com", referrer: "http://upmind.umbra-scorpionem.com/check/serve-page?code=647938&user=The+TOTP"

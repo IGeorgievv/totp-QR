@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		  <meta charset="utf-8" />
+		
+		  <title>Check TOTP</title>
+		  <meta name="description" content="TOTP" />
+		  <meta name="author" content="Task" />
+		  <link rel="icon" type="image/png" href="/img/icons/favicon.png" sizes="32x32" />
+		
+		  <link rel="stylesheet" type="text/css" href="/css/main.css" />
+	
+	</head>
+	
+	<body>
+	
+		<h1 class="title">TOTP</h1>
+		
+		<section>
+			<form method="GET">
+				<input type="text" name="code" value="<?= $data['form']['check']['code'] ?>" class="form-field" />
+				<input type="text" name="user" value="<?= $data['form']['check']['user'] ?>" class="form-field" />
+				<input type="submit" value="Check" class="btn btn-go" />
+			</form>
+		</section>
+
+		<?= $data['msgs']['error'] ?>
+		<?= $data['qr']['status'] ?>
+		<?= $data['qr']['response'] ?>
+	
+		<script src="/js/jQuery-3.4.0.js"></script>
+	  	<script src="/js/main.js"></script>
+	</body>
+</html>

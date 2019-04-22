@@ -1,0 +1,16 @@
+{
+	"name" : "generate/totp-qr",
+	"description": "Generate QR code, based on TOTP.",
+	"type" : "project",
+	"license" : "MIT",
+	"config" : {
+		"preferred-install" : {
+			"*" : "dist"
+		},
+		"sort-packages" : true
+	},
+  "require": {
+		"endroid/qr-code": "^3.0@dev",
+		"lfkeitel/phptotp": "^1.0"
+	}
+}

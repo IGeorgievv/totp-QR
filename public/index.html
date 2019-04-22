@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		  <meta charset="utf-8" />
+		
+		  <title>Generate TOTP</title>
+		  <meta name="description" content="TOTP" />
+		  <meta name="author" content="Task" />
+		  <link rel="icon" type="image/png" href="/img/icons/favicon.png" sizes="32x32" />
+		
+		  <link rel="stylesheet" type="text/css" href="/css/main.css" />
+	
+	</head>
+	
+	<body>
+	
+		<h1 class="title">TOTP</h1>
+		
+		<section>
+			<form method="POST">
+				<input type="text" name="label" value="<?= $data['form']['create']['label'] ?>" class="form-field" />
+				<input type="text" name="username" value="<?= $data['form']['create']['username'] ?>" class="form-field" />
+				<input type="submit" value="Generate" class="btn btn-go" />
+			</form>
+		</section>
+
+		<?= $data['msgs']['error'] ?>
+		<?= $data['totp'] ?>
+		<?= $data['qrCode'] ?>
+	
+		<script src="/js/jQuery-3.4.0.js"></script>
+	  	<script src="/js/main.js"></script>
+	</body>
+</html>
